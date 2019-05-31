@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frag3"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="History"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:background="#FF0"
+        android:drawableLeft="@android:drawable/ic_menu_recent_history"
+        />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#4b94c4"
+        android:dividerHeight="1dp"
+        android:listSelector="#a3a2de" />
+    <ImageButton
+        android:id="@+id/deltebtn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="deleteHistory"
+        app:srcCompat="@drawable/baseline_delete_forever_24"
+        />
+</LinearLayout>
